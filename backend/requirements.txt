@@ -1,0 +1,14 @@
+# ---- Phase 1: foundation ----
+# Later phases append their own dependencies (auth, document parsing, RAG, evaluation).
+fastapi>=0.115,<1.0
+uvicorn[standard]>=0.30,<1.0
+pydantic>=2.8,<3.0
+pydantic-settings>=2.4,<3.0
+sqlalchemy>=2.0.30,<2.1
+psycopg[binary]>=3.2,<4.0
+alembic>=1.13,<2.0
+python-multipart>=0.0.9
+
+# ---- Phase 2: database schema ----
+# pgvector: `vector` column type and similarity operators for SQLAlchemy.
+pgvector>=0.3,<1.0
